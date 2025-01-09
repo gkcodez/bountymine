@@ -18,7 +18,7 @@ const config = {
   url: 'https://github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/bug-bounty-guide',
+  baseUrl: '/bug-bounty-guide/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -35,7 +35,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  deploymentBranch: "gh-pages",
   presets: [
     [
       'classic',
