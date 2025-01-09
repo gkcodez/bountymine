@@ -92,7 +92,7 @@ const config = {
           // { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/about', label: 'About', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/gkcodez',
             label: 'GitHub',
             position: 'right',
           },
@@ -111,19 +111,11 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Social',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://linkedin.com/in/gkcodez',
               },
             ],
           },
@@ -132,7 +124,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/gkcodez',
               },
             ],
           },
