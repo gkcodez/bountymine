@@ -18,7 +18,7 @@ sidebar_position: 1
 - `cat` - Displays the contents of a file.
 - `pwd` - Prints the path of current working directory.
 - `find` - Finds a specific file within a tree of directories.
-- `grep` - Search the contents of a file.
+- `grep` - Searches the contents of a file.
 
 ## Shell Operators
 - `&` - Runs command in the background.
