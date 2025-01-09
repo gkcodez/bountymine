@@ -1,0 +1,8 @@
+{
+    "label": "Introduction to Cybersecurity",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "This is a custom description"
+    }
+}
