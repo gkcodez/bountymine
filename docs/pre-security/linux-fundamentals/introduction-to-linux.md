@@ -32,6 +32,3 @@ description: Commands, flags and operators.
 - `>` - Redirects the output of a command into a file.
 - `>>` - Same as redirect operator but instead of overwriting this operator appends to the contents of the file.
 
-
-## Users and Groups
-- `su guest` - Switch to guest user.
