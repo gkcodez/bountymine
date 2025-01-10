@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       title={`Home`}
-      description="Description will go into a meta tag in <head />">
+      description="Bug bounty tutorial for beginners">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
