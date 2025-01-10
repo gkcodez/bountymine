@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import HeaderImage from '@site/static/img/undraw_read-notes.svg';
+import HeaderImage from '@site/static/img/undraw_reading.svg';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -20,13 +20,11 @@ export default function Home() {
             {siteConfig.title}
           </Heading>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className="button button--secondary button--lg"
-              to="/docs/category/pre-security">
-              Take me to the guide 📕
-            </Link>
-          </div>
+          <Link
+            className={styles.button}
+            to="/docs/category/pre-security">
+            Take me to the guide 📕
+          </Link>
         </div>
       </main>
     </Layout>
