@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import HeaderImage from '@site/static/img/undraw_reading.svg';
+import HeaderImage from '@site/static/img/undraw_add-notes.svg';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
