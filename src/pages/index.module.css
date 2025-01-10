@@ -3,33 +3,8 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 14rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: red;
-}
-
-.button {
-  border: 1px solid red;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  font-size: 2rem;
-  text-decoration: none !important;
-  cursor: pointer;
+.homepage {
+  padding: 20pt 10pt !important;
 }
 
 .jumbotron {
@@ -42,7 +17,58 @@
   text-align: center;
 
   .bannerimage {
-    height: 200px;
-    width: 200px;
+    height: 150pt;
+    width: 150pt;
+    padding: 10pt;
+  }
+
+  .title {
+    font-size: 30pt;
+  }
+
+  .subtitle {
+    font-size: 16pt;
+  }
+}
+
+
+.button {
+  border: 2pt solid red;
+  padding: 15pt;
+  border-radius: 10pt;
+  font-size: 15pt;
+  text-decoration: none !important;
+  cursor: pointer;
+
+}
+
+
+/* Media queries */
+@media (min-width: 768px) {
+
+  .homepage {
+    padding: 30pt 20pt !important;
+  }
+
+  .jumbotron {
+    .bannerimage {
+      height: 250pt;
+      width: 250pt;
+      padding: 20pt;
+    }
+
+    .title {
+      font-size: 36pt;
+    }
+
+    .subtitle {
+      font-size: 20pt;
+    }
+  }
+
+  .button {
+    padding: 20pt;
+    font-size: 20pt;
+
   }
 }

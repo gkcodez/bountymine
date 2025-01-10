@@ -14,17 +14,19 @@ export default function Home() {
       title={`Home`}
       description="Bug bounty tutorial for beginners">
       <main>
-        <div className={styles.jumbotron}>
-          <HeaderImage title="Header Image" className="bannerimage" width={250} height={250} />
-          <Heading as="h1" className="hero__title">
-            {siteConfig.title}
-          </Heading>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <Link
-            className={styles.button}
-            to="/docs/category/pre-security">
-            Take me to the guide 📕
-          </Link>
+        <div className={styles.homepage}>
+          <div className={styles.jumbotron}>
+            <HeaderImage title="Header Image" className={styles.bannerimage} />
+            <Heading as="h1" className={styles.title}>
+              {siteConfig.title}
+            </Heading>
+            <p className={styles.subtitle}>{siteConfig.tagline}</p>
+            <Link
+              className={styles.button}
+              to="/docs/category/pre-security">
+              Take me to the guide 📕
+            </Link>
+          </div>
         </div>
       </main>
     </Layout>
