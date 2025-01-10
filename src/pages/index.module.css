@@ -21,3 +21,18 @@
   align-items: center;
   justify-content: center;
 }
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 180pt);
+  width: 100%;
+  text-align: center;
+
+  .bannerimage {
+    height: 200px;
+    width: 200px;
+  }
+}
