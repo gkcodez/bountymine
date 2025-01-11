@@ -36,6 +36,7 @@ sidebar_position: 1
 ## MAC Address
 - MAC (Media Access Control) Address is a 12 character hexadecimal number divided into 6 parts separated by a colon(:).
 - For example: a4:c3:f0:85:ac:2d
+- MAC address is set by the manufacturer and it is literally burnt into the network interface card.
 - MAC address can be faked using a process called **Spoofing**.
 
 ## Ping
