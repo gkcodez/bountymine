@@ -1,6 +1,7 @@
 ---
-title: Introduction to Cybersecurity
+title: Cybersecurity Introduction
 sidebar_position: 1
+description: Introduction to cybersecurity
 ---
 
 ## Types of Cybersecurity

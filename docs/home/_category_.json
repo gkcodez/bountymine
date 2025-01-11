@@ -1,0 +1,8 @@
+{
+    "label": "Home",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "Homepage of bug bounty guide."
+    }
+}

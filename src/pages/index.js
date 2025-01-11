@@ -22,7 +22,7 @@ export default function Home() {
             <p className={styles.subtitle}>{siteConfig.tagline}</p>
             <Link
               className={styles.button}
-              to="/docs/category/getting-started">
+              to="/docs/category/home">
               Take me to the guide 📕
             </Link>
           </div>
