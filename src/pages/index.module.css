@@ -33,35 +33,24 @@
 
 .button {
   border: 2pt solid #d1495b;
-  /* A professional red shade */
   color: #d1495b;
   font-weight: medium;
   padding: 15pt;
   border-radius: 100pt;
-  /* Slightly less rounded corners */
   font-size: 15pt;
   text-decoration: none !important;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  /* Smooth transition effects */
 }
 
 .button:hover {
-  /* background-color: #CC0000; */
-  /* Darker red on hover */
   transform: scale(1.05);
-  /* Slightly larger on hover */
 }
 
 .button:active {
-  /* background-color: #CC0000; */
-  /* Even darker red when clicked */
   transform: scale(1);
-  /* Reset to original size */
 }
 
 .button:focus {
   outline: none;
-  /* box-shadow: 0 0 0 3pt #ffcccc; */
-  /* Light red outline for accessibility */
 }
