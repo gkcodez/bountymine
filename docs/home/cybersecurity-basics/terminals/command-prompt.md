@@ -1,7 +1,7 @@
 ---
-title: Windows Command Prompt
-sidebar_position: 2
-description: Command line program in windows.
+title: Command Prompt
+sidebar_position: 1
+description: Command prompt application in windows.
 ---
 
 ## Introduction
