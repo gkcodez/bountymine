@@ -35,12 +35,14 @@
   border: 2pt solid #d1495b;
   color: #d1495b;
   font-weight: medium;
-  padding: 15pt;
+  padding: 14pt;
   border-radius: 100pt;
-  font-size: 15pt;
+  font-size: 14pt;
   text-decoration: none !important;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .button:hover {
