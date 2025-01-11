@@ -91,6 +91,11 @@ const config = {
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           // { to: '/about', label: 'About', position: 'left' },
+                    {
+            href: 'https://linkedin.com/in/gkcodez',
+            label: 'LinkedIn',
+            position: 'right',
+          },
           {
             href: 'https://github.com/gkcodez',
             label: 'GitHub',
@@ -101,33 +106,33 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Docs',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Social',
-            items: [
-              {
-                label: 'LinkedIn',
-                href: 'https://linkedin.com/in/gkcodez',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/gkcodez',
-              },
-            ],
-          },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Docs',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'Social',
+          //   items: [
+          //     {
+          //       label: 'LinkedIn',
+          //       href: 'https://linkedin.com/in/gkcodez',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'More',
+          //   items: [
+          //     {
+          //       label: 'GitHub',
+          //       href: 'https://github.com/gkcodez',
+          //     },
+          //   ],
+          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Bug Bounty Guide.`,
       },
