@@ -1,10 +1,9 @@
-import Layout from '@theme/Layout';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
 import HeaderImage from '@site/static/img/undraw_add-notes.svg';
+import Heading from '@theme/Heading';
+import Layout from '@theme/Layout';
+import styles from './index.module.css';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -23,7 +22,7 @@ export default function Home() {
             <p className={styles.subtitle}>{siteConfig.tagline}</p>
             <Link
               className={styles.button}
-              to="/docs/category/pre-security">
+              to="/docs/category/getting-started">
               Take me to the guide 📕
             </Link>
           </div>
