@@ -11,7 +11,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Cybermine',
-  tagline: 'Collection of Guides and Resources for Cybersecurity and Bug Bounty!',
+  tagline: 'Guides and resources for cybersecurity!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -134,7 +134,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Bug Bounty Guide.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Cybermine.`,
       },
       prism: {
         theme: prismThemes.github,
