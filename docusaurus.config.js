@@ -10,20 +10,20 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Bug Bounty Guide',
-  tagline: 'Collection of Guides and Resources for Bug Bounty!',
+  title: 'Cybermine',
+  tagline: 'Collection of Guides and Resources for Cybersecurity and Bug Bounty!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/bug-bounty-guide/',
+  baseUrl: '/cybermine/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'gkcodez', // Usually your GitHub org/user name.
-  projectName: 'bug-bounty-guide', // Usually your repo name.
+  projectName: 'cybermine', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -77,9 +77,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Bug Bounty Guide',
+        title: 'Cybermine',
         logo: {
-          alt: 'Bug Bounty Guide Logo',
+          alt: 'Cybermine Logo',
           src: 'img/logo.svg',
         },
         items: [
