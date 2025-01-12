@@ -23,7 +23,7 @@ export default function Home() {
             <Link
               className={styles.button}
               to="/docs/category/home">
-              Show me the guide
+              Start Reading
             </Link>
           </div>
         </div>
