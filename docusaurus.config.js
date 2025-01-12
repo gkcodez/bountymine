@@ -1,4 +1,4 @@
-// @ts-check
+e// @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
@@ -134,7 +134,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Bug Bounty Guide.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Cybermine.`,
       },
       prism: {
         theme: prismThemes.github,
