@@ -1,4 +1,4 @@
-e// @ts-check
+// @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
@@ -10,20 +10,20 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Cybermine',
-  tagline: 'Guides and resources for cybersecurity!',
+  title: 'Bounty Mine',
+  tagline: 'Guides and resources for bug bounty!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/cybermine/',
+  baseUrl: '/bountymine/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'gkcodez', // Usually your GitHub org/user name.
-  projectName: 'cybermine', // Usually your repo name.
+  projectName: 'bountymine', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -77,9 +77,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Cybermine',
+        title: 'Bounty Mine',
         logo: {
-          alt: 'Cybermine Logo',
+          alt: 'Bounty mine logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -134,7 +134,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Cybermine.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Bounty Mine.`,
       },
       prism: {
         theme: prismThemes.github,
