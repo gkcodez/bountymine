@@ -137,7 +137,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Bounty Mine.`,
       },
       prism: {
-        theme: prismThemes.github,
+        theme: prismThemes.dracula,
         darkTheme: prismThemes.dracula,
       },
     }),

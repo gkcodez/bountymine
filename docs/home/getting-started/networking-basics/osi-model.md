@@ -77,3 +77,34 @@ sidebar_position: 3
 - Most familiar layer. User interaction happens in this layer.
 - Protocols and rules are present in this layer.
 - Email clients, browsers, etc are part of this layer and these application provide a user friendly **Graphical User Interface (GUI)** for the user to interact with.
+
+## Summary
+- To remember all layers in proper order, use the phrase "_Please Do Not Throw The Spinach Pizza Away_".
+- **Physical Layer**
+    - 1st Layer
+    - Physical Data Transmission Media. 
+    - Protocols: Electrical, optical, and wireless signals
+- **Data Link Layer**
+    - 2nd Layer
+    - Reliable Data Transfer within the network between adjacent nodes.
+    - Protocols: Ethernet (802.3), WiFi (802.11)
+- **Network Layer**
+    - 3rd Layer
+    - Logical addressing and Routing between networks.
+    - Protocols: IP, ICMP, IPSec
+- **Transport Layer**
+    - 4th Layer
+    - End to End Communication and Data Segmentation.
+    - Protocols: UDP, TCP
+- **Session Layer**
+    - 5th Layer
+    - Establishing, maintaining, and synchronising sessions.
+    - Protocols: NFS, RPC
+- **Presentation Layer**
+    - 6th Layer
+    - Encoding, Encryption and Compression happens in this layer.
+    - Protocols: Unicode, MIME, JPEG, PNG, MPEG
+- **Application Layer**
+    - 7th Layer
+    - Provides services and interfaces to applications.
+    - Protocols: HTTP, FTP, DNS, POP3, SMTP, IMAP
