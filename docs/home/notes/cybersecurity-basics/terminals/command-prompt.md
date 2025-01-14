@@ -44,7 +44,8 @@ description: Command prompt application in windows.
 - `rmdir` - Remove directory.
 
 ## Working with Files
-- `type` - Print the contents of the text file in command prompt. Similar to `cat` command in linux.
+- `echo "This is a test" > test.txt` - Creates a file.
+- `type` - Print the contents of the file in command prompt. Similar to `cat` command in linux.
 - `copy` - Copy files from one location to another.
 - `move` - Moves files from one location to another.
 - `del` or `erase` - Delete files.

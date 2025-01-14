@@ -43,3 +43,41 @@ sidebar_position: 1
     - **Domain Controllers** - Includes all existing domain controllers (DCs) in the domain.
 - Complete list of default security groups can be found here: https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups
 
+## Active Directory Users and Computers
+- Objects in active directory are organised into **Organizational Units (OU)**.
+- Default Containers in AD are
+    - **Builtin** - Contains default groups available to any windows hosts.
+    - **Computers** - All machine joining the network will be put her by default.
+    - **Domain Controllers** - Default OU that contains DCs in your network.
+    - **Users** - Holds default users and groups in windows domain.
+    - **Managed Service Accounts** - Holds accounts used by services.
+
+## Managing Users In Active Directory
+- To delete an Organizational Units
+    - Navigate to View > Enable "Advanced Features".
+    - Open "Properties" > "Object" tab.
+    - Uncheck "Protect object from accidental deletion".
+    - Delete the OU.
+
+## Delegation
+- Delegation is the process of providing specific features some control over some OUs.
+- To delegate a task
+    - Right click on an OU and click "Delegate Control"
+    - Type the user name and Click "Check Names"
+    - Select the Tasks to be delegated and Click Finish.
+- To reset the password for another user
+```powershell
+Set-ADAccountPassword sophie -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose
+```
+- To force a password reset at the next logon.
+```powershell
+Set-ADUser -ChangePasswordAtLogon $true -Identity sophie -Verbose
+```
+
+## Managing Computers in AD
+- In General, It is good to divide the computers into at least 3 categories.
+    - Workstations
+    - Servers
+    - Domain Controllers
+
+## Group Policies
