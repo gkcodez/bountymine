@@ -1,5 +1,5 @@
 ---
-title: Remote code execution (RCE)
+title: Remote Code Execution (RCE)
 sidebar_position: 1
 ---
 
