@@ -4,6 +4,7 @@ sidebar_position: 1
 ---
 
 ## Forensic Tools
+
 ### File
 - Displays basic information about the file song.mp3.
 - Usage: `file song.mp3`.
