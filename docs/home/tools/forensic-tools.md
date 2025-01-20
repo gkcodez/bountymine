@@ -1,6 +1,6 @@
 ---
-title: All Tools
-sidebar_position: 1
+title: Forensic Tools
+sidebar_position: 2
 ---
 
 ## Forensic Tools
@@ -16,8 +16,6 @@ sidebar_position: 1
 ### CyberChef
 - For encoding and decoding.
 - Link: https://gchq.github.io/CyberChef
-
-## Analysis Tools
 
 ### ELK (Elastic Search, Logstash, Kibana)
 - For log analysis.
