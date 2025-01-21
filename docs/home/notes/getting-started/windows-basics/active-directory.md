@@ -127,4 +127,4 @@ Set-ADUser -ChangePasswordAtLogon $true -Identity sophie -Verbose
 - Attackers abuse group policies to create persistent, previleged access to resources.
 
 ### Skeleton Key Attack
-- In a skeleton key attack , attackers install malware backdoor to login as any user using the master password. The user password remains unchanged.
+- In a skeleton key attack , attackers install malware backdoor to login as any user using the master password. The user password remains unchanged.    
