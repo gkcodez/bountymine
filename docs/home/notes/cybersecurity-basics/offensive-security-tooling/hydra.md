@@ -1,0 +1,40 @@
+---
+title: Hydra
+sidebar_position: 1
+description: Online login forms and password cracking tool.
+---
+
+## Hydra Introduction
+- Hydra is a brute force online password cracking program, a quick system login password "hacking" tool.
+- Hydra supports SSH, Web Application Form, FTP or SNMP.
+
+## Basic commands
+
+### FTP
+
+```
+hydra -l user -P passlist.txt ftp://MACHINE_IP
+```
+
+### SSH
+
+```
+hydra -l <username> -P <full path to pass> 10.10.124.243 -t 4 ssh
+```
+- `-l` - Username
+- `-P` - Password list
+- `-t` - Number of threads (Optional)
+- For example: `hydra -l root -P passwords.txt 10.10.124.243 -t 4 ssh`
+
+### Post Web Form
+
+```
+sudo hydra -l <username> -P <wordlist> 10.10.124.243 http-post-form "<path>:<login_credentials>:<invalid_response>"
+```
+- `http-post-form` - Method type
+- `<path>` - URL. For example: login.php
+- `<login_credentials>` - the username and password used to log in. For example: username=^USER^&password=^PASS^
+- `<invalid_response>` - String in response when login fails.
+- `-V` - Verbose output
+
+- For example: `hydra -l <username> -P <wordlist> 10.10.124.243 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V`
