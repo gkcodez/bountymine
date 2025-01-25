@@ -29,3 +29,13 @@ description: Files interaction and permissions.
 - **/var** - Variable data - Stores the data which is frequently accessed by files and services running in the system.
     - **/var/log** - Stores the log files from applications and services.
 - **/tmp** - Contains only the temporary data. When the computer is restarted the contents of this folder are cleared out.
+
+## Search Files
+- Find files by name.
+    ```
+    find / -type f -name <FILE_NAME>
+    ```
+- Find files by name ignoring error messages.
+    ```
+     find / -type f -name user.txt 2> /dev/null
+    ```

