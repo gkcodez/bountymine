@@ -102,7 +102,6 @@ description: Networking Core Protocols for Cybersecurity.
 | TELNET	| TCP	                | 23                    |
 | DNS	    | UDP or TCP	        | 53                    |
 | HTTP	    | TCP	                | 80                    |
-| HTTPS	    | TCP	                | 443                   |
 | FTP	    | TCP	                | 21                    |
 | SMTP	    | TCP	                | 25                    |
 | POP3	    | TCP	                | 110                   |
