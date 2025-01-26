@@ -27,9 +27,9 @@ description: Basics of Wireshark.
 ## Colouring Packets
 - Coloring packets can help to spot anomalies and protocols in captures quickly.
 - Wireshark has two types of packet colouring methods.
-    - Temporary (Only applies to the current session). Navigate to **View -> Conversation Filter**.
-    - Permanent (Applies to all sessions). Navigate to **View -> Coloring Rules**.
-- The View -> Colorize Packet List activates or deactivates the coloring rules.
+    - Temporary (Only applies to the current session). Navigate to **View --> Conversation Filter**.
+    - Permanent (Applies to all sessions). Navigate to **View --> Coloring Rules**.
+- The View --> Colorize Packet List activates or deactivates the coloring rules.
 
 ## Traffic Sniffing
 - **Blue Shark button** starts network sniffing.
@@ -37,7 +37,7 @@ description: Basics of Wireshark.
 - **Green button** will restart network sniffing.
 
 ## Merge PCAP Files
-- Combine two PCAP files using File -> Merge menu path.
+- Combine two PCAP files using File --> Merge menu path.
 
 ## View File Details
 - To view the file details such as file hash, capture time, capture file comments, interface and statistics. Do one of the following.
@@ -61,8 +61,8 @@ description: Basics of Wireshark.
 
 ## Packet Navigation
 - Wireshark calculates the number of investigated packets and assigns a unique number for each packet. 
-- To Go to a packet number, Navigate to `Go -> Go to Packet` or Press `Ctrl+G`.
-- To Find a packet Navigate to `Edit -> Find Packet` or Press `Ctrl+F`.
+- To Go to a packet number, Navigate to `Go --> Go to Packet` or Press `Ctrl+G`.
+- To Find a packet Navigate to `Edit --> Find Packet` or Press `Ctrl+F`.
 - There are two crucial points in finding packets. 
 - The first is knowing the input type. This functionality accepts four types of inputs 
     - Display filter
@@ -85,4 +85,73 @@ description: Basics of Wireshark.
 ## Packet Comments
 - Commenting will help the further investigation or remind and point out important/suspicious points for other layer analysts.
 - Unlike packet marking, the comments can stay within the capture file until the operator removes them.
-- To add a packet comment, Navigate to `Edit -> Packet Comment` or Press `Ctrl+Alt+C`.
+- To add a packet comment, Navigate to `Edit --> Packet Comment` or Press `Ctrl+Alt+C`.
+
+## Export Packets
+- Capture files can contain thousands of packets in a single file.
+- Use the `File` menu to export packets.
+
+## Export Objects (Files)
+- Wireshark can extract files transferred through the wire. 
+- Exporting objects are available only for selected protocol's streams such as DICOM, HTTP, IMF, SMB and TFTP.
+
+## Time Display Format
+- By default, Wireshark shows the time in "Seconds Since Beginning of Capture".
+- The common usage is using the UTC Time Display Format for a better view.
+- Use the `View --> Time Display Format` menu to change the time display format.
+
+## Expert Info
+- These are only suggestions and there are chances of false positives.
+
+| Severity | Color  | Info                                                     |
+| -------- | ------ | -------------------------------------------------------- |
+| Chat     | Blue   | Information on usual workflow                            |
+| Note     | Cyan   | Notable events like application error codes              |
+| Warn     | Yellow | Warnings like unusual error codes and problem statements |
+| Error    | Red    | Problems like malformed packets                          |
+
+| Group      | Info                       |
+| ---------- | -------------------------- |
+| Checksum   | Checksum errors            |
+| Comment    | Packet comment detection   |
+| Deprecated | Deprecated protocol usage  |
+| Malformed  | Malformed packet detection |
+
+
+## Packet Filtering
+- Wireshark has a powerful filter engine that helps analysts to narrow down the traffic and focus on the event of interest.
+- Wireshark has two types of filtering approaches: capture and display filters. 
+  - Capture filters are used for "capturing" only the packets valid for the used filter. 
+  - Display filters are used for "viewing" the packets valid for the used filter. 
+- Filters are only the option to investigate the event of interest.
+- There are two different ways to filter traffic and remove the noise from the capture file
+  - Using queries
+  - Using right click menu
+
+## Apply as Filter
+- This is the most basic way of filtering traffic.
+- Click on the field to be filtered and use the right click menu or `Analyse --> Apply as Filter`.
+- Number of packets will be displayed in the status bar at the bottom right.
+
+## Conversation Filter
+- To view the specific packet number and all linked packets by focusing on IP addresses and port numbers.
+- Click on the field to be filtered and use the right click menu or `Analyse --> Conversation Filter`.
+
+## Colourise Conversation
+- Similar to the "Conversation Filter" but it just highlights the linked packets without applying a display filter and decreasing the number of viewed packets.
+- Click on the field to be filtered and use the right click menu or `Analyse --> Colorise Conversation`.
+
+## Prepare as Filter
+- Similar to "Apply as Filter", this option helps analysts create display filters using the right-click menu.
+- Prepare as filter doesn't apply the filters after the selecting the option. It just adds the required query to the pane and waits for the execution command `enter` or another chosen filtering option by using the `.. and/or..` from the right-click menu.
+
+## Apply Column
+- Adds a property in details pane as columns to the packet list pane.
+- To apply as a column, use the right-click menu or `Analyse --> Apply as Column`.
+
+## Follow Stream
+- Wireshark displays everything in packet portion size. 
+- But it is also possible to reconstruct the streams and view the raw traffic as it is presented at the application level.
+- Following the protocol, streams help analysts recreate the application-level data and understand the event of interest.
+- Use the right-click menu or  `Analyse --> Follow TCP/UDP/HTTP Stream` menu to follow traffic streams.
+- Streams are shown in a separate dialogue box; packets originating from the **server are highlighted with blue**, and those originating from the **client are highlighted with red**.
