@@ -12,11 +12,11 @@ description: tmux, the terminal multiplexer.
   ```
 
 ## Sessions
-- `tmux` or `tmux new` or `tmux new-session` - Create new session with default name.
+- `tmux` or `tmux new` or `tmux new-session` - Create new session .
 - `tmux new -S <SESSION_NAME>` - Create a new session with session name.
-- `tmux a` or `tmux att` or `tmux attach` or `tmux attach-session` - Attach to the default session.
+- `tmux a` or `tmux att` or `tmux attach` or `tmux attach-session` - Attach to the recent session.
 - `tmux a -t <SESSION_NAME>` - Attach to a session with session name.
-- `tmux kill-ses` - Removes the default session.
+- `tmux kill-ses` - Removes the recent session.
 - `tmux kill-session -t <SESSION_NAME>` - Kills the session with session name.
 
 ### Session Keybindings
