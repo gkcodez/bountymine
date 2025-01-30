@@ -1,6 +1,6 @@
 ---
 title: Reverse Engineering Tools
-sidebar_position: 5
+sidebar_position: 8
 ---
 
 ### IDA, Ghidra, and GDB
