@@ -1,6 +1,6 @@
 ---
 title: Public Key Cryptography Basics
-sidebar_position: 3
+sidebar_position: 2
 description: Basics of Public Key Cryptography.
 ---
 
@@ -44,3 +44,90 @@ description: Basics of Public Key Cryptography.
   - The private key is `n and d`
   - `m` is used to represent the original message, i.e., plaintext
   - `c` represents the encrypted text, i.e., ciphertext
+
+## Diffie Hellman Key Exchange
+- Key exchange aims to establish shared secret between two parties.
+- For example, Alice and Bob wants to talk securely.
+  - Alice and Bob generates private keys independently.
+  - They both agree on the public variables: a large prime number p and a generator g, where `0 < g < p`. These values will be disclosed publicly over the communication channel.
+  - Let's choose `p = 29 and g = 3` to simplify our calculations.
+  - They both calculate their public key using the private key that they have.
+  - Alice calculates A = `g^a mod p` = 313 mod 29 =`19` and Bob calculates B =` g^b mod p` = 315 mod 29 = `26`. These are the public keys.
+  - They share these public keys to each other and calculates the shared key by reversing the formula.
+    - Alice calculation: `B^a mod p` = 2613 mod 29 = `10`.
+    - Bob's calculation: `A^b mod p` = 1915 mod 29 = `10`
+  - Diffie-Hellman Key Exchange is `often used alongside RSA public key cryptography`. Diffie-Hellman is used for key agreement, while RSA is used for digital signatures, key transport, and authentication, among many others.
+
+
+## SSH
+- SSH authentication uses both public and private keys to prove that the client is valid and authorized.
+- By default, SSH keys are RSA keys. But the user is allowed to select the algorithm and can add a passphrase.
+- `ssh-keygen` is used to generate SSH keypairs. It supports the following algorithms.
+  - **DSA (Digital Signature Algorithm)** is a public-key cryptography algorithm specifically designed for digital signatures.
+  - **ECDSA (Elliptic Curve Digital Signature Algorithm)** is a variant of DSA that uses elliptic curve cryptography to provide smaller key sizes for equivalent security.
+  - **ECDSA-SK (ECDSA with Security Key)** is an extension of ECDSA. It incorporates hardware-based security keys for enhanced private key protection.
+  - **Ed25519** is a public-key signature system using EdDSA (Edwards-curve Digital Signature Algorithm) with Curve25519.
+  - **Ed25519-SK (Ed25519 with Security Key)** is a variant of Ed25519. Similar to ECDSA-SK, it uses a hardware-based security key for improved private key protection.
+- To generate a ed25519 key pair with default options use the below command.
+  ```
+  ssh-keygen -t ed25519
+  ```
+- The above command generates the public key (with a .pub extension) and a private key.
+
+### SSH Private keys
+- **Private keys are like passwords** and it should not be shared at any circumstances.
+- Use a passphrase to encrypt the private key, so that the attacker cannot use it without the passphrase.
+- Tools like **John the Ripper** can crack the passwords, so it is recommended to use a complex password.
+- `ssh-copy-id` can be used to copy ssh keys to servers.
+- Permissions must be set to enable only owner to read or write to the private key. (600 or stricter)
+- To login to an ssh session by specifying the key use the below command.
+  ```
+  ssh -i privateKeyFileName user@host
+  ```
+- `~/.ssh` folder is the default place to store the ssh keys.
+- `authorized_keys` file in this directory stores the list of public keys that are allowed access to the server.
+
+## Digital Signatures and Certificates
+
+### Digital Signatures
+
+- Digital signatures provide a way to verify the authenticity and integrity of a digital message or document.
+- The simplest form of digital signature is encrypting the document with your private key. If someone wants to verify this signature, they would decrypt it with your public key and check if the files match.
+- Digital signatures and Electronic signatures are different as the latter means pasting an image of the signature on top of a document. This does not ensure integrity as anyone can paste the image.
+- An example of the digital signature verification is as below.
+  - Bob encrypts a hash of his document and shares it with Alice, along with the original document. 
+  - Alice can decrypt the encrypted hash using the bob's public key. 
+  - Alice then compares it with the hash of the file she received.
+
+### Certificates
+- Certificates prove who you are.
+- A common use of certificates is HTTPS, it proves that browser that the website which you visit is real.
+- Certificates have a chain of trust starting with the root certificate authority (Root CA).
+  - The browser trusts CA.
+  - CA trusts the organization.
+  - Organization signs the certificate.
+  - Browser trusts the certificate.
+- If you have a website and want to use HTTPS, then you should get a TLS certificate.
+- Get a free TLS certificate on https://letsencrypt.org/.
+
+## PGP and GPG
+- PGP - Pretty Good Privacy.
+  - It is a software for implementing encryption for encrypting files and performing digital signing.
+- GPG - GNU Privacy Guard. 
+  - It is an open source implementation of OpenPGP.
+  - GPG is commonly used in email to protect confidentiality of email messages.
+  - To generate a GPG, use the command `gpg --full-gen-key`.
+  - To crack a password protected gpg key use `gpg2john`
+
+### Practical Example of GPG
+- Generate a GPG key pair.
+- Share the public key with the person B.
+- Person B encrypts a message with the public key and sends it to you.
+- You import the private key using the command `gpg --import backup.key`.
+- You decrypt the GPG message using the command `gpg --decrypt confidential_message.gpg`.
+
+## Summary
+- **Cryptography** is the science of securing communication and data using codes and ciphers.
+- **Cryptanalysis** is the study of methods to break or bypass cryptographic security systems without knowing the key.
+- **Brute-Force Attack** is an attack method that involves trying every possible key or password to decrypt a message.
+- **Dictionary Attack** is an attack method where the attacker tries dictionary words or combinations of them.

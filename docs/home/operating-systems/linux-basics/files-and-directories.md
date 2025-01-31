@@ -13,6 +13,9 @@ description: Files interaction and permissions.
 - `mv` - Move files.
 - `rm` - Remove files.
 - `file` - Displays information about the file type.
+- `cat` - Read from a file.
+- `head -n 20 <FILE_NAME>` - Read first 20 lines from a text file.
+
 
 ## File Permissions
 - `-r` - Read permission.
