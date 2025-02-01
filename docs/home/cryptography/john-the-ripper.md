@@ -93,4 +93,68 @@ description: John the Ripper hash cracking tool.
     ```
 
 ## Custom Rules
-- 
+- Custom rules can be defined for john to create passwords dynamically.
+- Common pattern people use to bypass password complexiety check is the password with a capital letter first and a number followed by a symbol at the end.
+- For example: if `polopassword` is restricted users go with `Polopassword1!`.
+- We can define rules in john which matches this kind of patterns.
+- Custom rules are defined in the `john.conf` file.
+- This file can be found in `/opt/john/john.conf` or `/etc/john/john.conf`.
+- Syntax for custom rules is as below.
+  - `[List.Rules:THMRules]` - To define the name of rule.
+  - `Az` - Takes the word and appends it with the characters you define
+  - `A0` - Takes the word and prepends it with the characters you define
+  - `c` - Capitalises the character positionally
+-  Add character sets in square brackets [ ] to define what characters to be used and where they should be used. 
+-  These follow the modifier patterns inside double quotes " "
+  - [0-9]: Will include numbers 0-9
+  - [0]: Will include only the number 0
+  - [A-z]: Will include both upper and lowercase
+  - [A-Z]: Will include only uppercase letters
+  - [a-z]: Will include only lowercase letters
+  - [a]: Will include only a
+  - [!£$%@]: Will include the symbols !, £, $, %, and @
+- To match Polopassword1! from the word polopassword, use the below rule
+    ```
+    [List.Rules:PoloPassword]
+    cAz"[0-9] [!£$%@]"
+    ```
+    - `c` - Capitalises the first letter
+    - `Az` - Appends to the end of the word
+    - `[0-9]` - A number in the range 0-9
+    - `[!£$%@]` - The password is followed by one of these symbols
+- Once the custom rule is created. Use the rule by the below command
+    ```
+    john --wordlist=[path to wordlist] --rule=PoloPassword [path to file]
+    ```
+
+## Cracking Password Protected Zip Files
+- Use `zip2john` to generate the password hash using the below command
+    ```
+    zip2john zipfile.zip > zip_hash.txt
+    ```
+- Crack the password using the generated hash using the below command
+    ```
+    john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
+    ```
+
+## Cracking Password-Protected RAR Archives
+- Use `rar2john` to generate the password hash using the below command
+    ```
+    rar2john rarfile.rar > rar_hash.txt
+    ```
+- Crack the password using the generated hash using the below command
+    ```
+    john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt
+    ```
+
+## Cracking SSH Keys with John
+- Use `ssh2john` to generate the password hash using the below command
+    ```
+    /opt/john/ssh2john.py id_rsa > id_rsa_hash.txt
+    ```
+- Crack the password using the generated hash using the below command
+    ```
+    john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa_hash.txt
+    ```
+
+For more information on John the Ripper, Check out https://www.openwall.com/john/.
