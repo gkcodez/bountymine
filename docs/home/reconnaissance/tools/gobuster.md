@@ -1,6 +1,6 @@
 ---
 title: Gobuster
-sidebar_position: 2
+sidebar_position: 1
 description: Enumeration and bruteforcing tool.
 ---
 

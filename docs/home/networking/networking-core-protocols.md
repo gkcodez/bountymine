@@ -1,6 +1,6 @@
 ---
 title: Networking Core Protocols
-sidebar_position: 3
+sidebar_position: 4
 description: Networking Core Protocols for Cybersecurity.
 ---
 
@@ -97,12 +97,12 @@ description: Networking Core Protocols for Cybersecurity.
 
 ## Summary
 
-| Protocol	| Transport Protocol	| Default Port Number   |
-| ---       | ---                   |---                    |
-| TELNET	| TCP	                | 23                    |
-| DNS	    | UDP or TCP	        | 53                    |
-| HTTP	    | TCP	                | 80                    |
-| FTP	    | TCP	                | 21                    |
-| SMTP	    | TCP	                | 25                    |
-| POP3	    | TCP	                | 110                   |
-| IMAP	    | TCP	                | 143                   |
+| Protocol | Transport Protocol | Default Port Number |
+| -------- | ------------------ | ------------------- |
+| TELNET   | TCP                | 23                  |
+| DNS      | UDP or TCP         | 53                  |
+| HTTP     | TCP                | 80                  |
+| FTP      | TCP                | 21                  |
+| SMTP     | TCP                | 25                  |
+| POP3     | TCP                | 110                 |
+| IMAP     | TCP                | 143                 |

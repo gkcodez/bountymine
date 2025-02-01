@@ -1,6 +1,6 @@
 ---
 title: Introduction to LAN
-sidebar_position: 2
+sidebar_position: 7
 ---
 
 ## Local Area Network(LAN)

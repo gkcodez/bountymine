@@ -1,7 +1,7 @@
 ---
-title: Web Application Basics
+title: Web Applications
 sidebar_position: 1
-description: Basics of web applications.
+description: Web application notes.
 ---
 
 ## Front End

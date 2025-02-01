@@ -1,6 +1,6 @@
 ---
 title: Nmap Basics
-sidebar_position: 7
+sidebar_position: 3
 description: Basics of Nmap.
 ---
 

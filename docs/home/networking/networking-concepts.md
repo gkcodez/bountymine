@@ -1,6 +1,6 @@
 ---
 title: Networking Concepts
-sidebar_position: 1
+sidebar_position: 2
 description: Networking Concepts for Cybersecurity.
 ---
 

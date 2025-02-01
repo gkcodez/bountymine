@@ -1,6 +1,6 @@
 ---
 title: Networking Secure Protocols
-sidebar_position: 4
+sidebar_position: 5
 description: Networking Secure Protocols for Cybersecurity.
 ---
 
@@ -26,14 +26,14 @@ description: Networking Secure Protocols for Cybersecurity.
 
 ## SMTPS, POP3S, and IMAPS
 
-| Protocol	| Transport Protocol	| Default Port Number   |
-| ---       | ---                   |---                    |
-| SSH       | TCP                   | 22                    |
-| HTTPS	    | TCP	                | 443                   |
-| FTPS      | TCP                   | 990                    |
-| SMTPS	    | TCP	                | 465 and 587           |
-| POP3S	    | TCP	                | 995                   |
-| IMAPS	    | TCP	                | 993                   |
+| Protocol | Transport Protocol | Default Port Number |
+| -------- | ------------------ | ------------------- |
+| SSH      | TCP                | 22                  |
+| HTTPS    | TCP                | 443                 |
+| FTPS     | TCP                | 990                 |
+| SMTPS    | TCP                | 465 and 587         |
+| POP3S    | TCP                | 995                 |
+| IMAPS    | TCP                | 993                 |
 
 ## SSH
 - Although, telnet is convenient to login to remote systems it is less secure.

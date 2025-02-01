@@ -1,0 +1,8 @@
+{
+  "label": "Applications",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Application notes."
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: Public Key Cryptography Basics
-sidebar_position: 2
+sidebar_position: 3
 description: Basics of Public Key Cryptography.
 ---
 
