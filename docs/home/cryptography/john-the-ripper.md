@@ -56,4 +56,41 @@ description: John the Ripper hash cracking tool.
 - Use the `NT` format to crack the NT hash.
 
 ## Cracking /etc/shadow Hashes
+- In linux, the `/etc/shadow` file stores the password hashes. 
+- It also stores additional information such as the date of last password change, password expiration information, etc.
+- This file is only accessible by the root user.
+
+### Unshadowing
+- John is very particular about the data it needs to work with.
+- For this reason, in order to crack `/etc/shadow`, we need to combine it with `/etc/passwd`.
+- John has an inbuilt tool called `unshadow` for this purpose.
+- Either pass the whole file path like below.
+    ```
+    unshadow /etc/passwd /etc/shadow > unshadowed.txt
+    ```
+- Create two files `local_passwd` and `local_shadow` which would contain the lines from `/etc/passwd` and `/etc/shadow`.
+    ```
+    unshadow local_passwd local_shadow > unshadowed.txt
+    ```
+
+### Cracking the password
+- To crack the hashes we should feed the output from unshadow to john using the below command.
+    ```
+    john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed.txt
+    ```
+
+## Single Crack Mode
+- In single cracking mode, John uses only the information provided in the username to try and work out possible passwords heuristically by slightly changing the letters and numbers contained within the username.
+- Consider the username `Markus`. Some possible passwords are `Markus1, Markus2, Markus3, MArkus, MARkus, MARKus, Markus!, Markus$, Markus*`.
+- This technique is called **word mangling**.
+- To crack the password for the username mike, we would use the below command.
+    ```
+    john --single --format=<HASH_FORMAT> hashes.txt
+    ```
+- Note: In single crack mode, we need to prepend the username to be cracked to the password hash like below
+    ```
+    mike:1efee03cdcb96d90ad48ccc7b8666033
+    ```
+
+## Custom Rules
 - 
