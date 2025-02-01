@@ -4,45 +4,45 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import { themes as prismThemes } from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Bounty Mine',
-  tagline: 'Guides and resources for bug bounty!',
-  favicon: 'img/favicon.ico',
+  title: "Bounty Mine",
+  tagline: "Guides and resources for bug bounty!",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://github.com',
+  url: "https://github.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/bountymine/',
+  baseUrl: "/bountymine/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'gkcodez', // Usually your GitHub org/user name.
-  projectName: 'bountymine', // Usually your repo name.
+  organizationName: "gkcodez", // Usually your GitHub org/user name.
+  projectName: "bountymine", // Usually your repo name.
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
   deploymentBranch: "gh-pages",
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -65,46 +65,48 @@ const config = {
         //   onUntruncatedBlogPosts: 'warn',
         // },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       }),
     ],
   ],
 
+  plugins: [require.resolve("@easyops-cn/docusaurus-search-local")],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: 'Bounty Mine',
+        title: "Bounty Mine",
         logo: {
-          alt: 'Bounty mine logo',
-          src: 'img/logo.svg',
+          alt: "Bounty mine logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Docs',
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Docs",
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           // { to: '/about', label: 'About', position: 'left' },
-                    {
-            href: 'https://linkedin.com/in/gkcodez',
-            label: 'LinkedIn',
-            position: 'right',
+          {
+            href: "https://linkedin.com/in/gkcodez",
+            label: "LinkedIn",
+            position: "right",
           },
           {
-            href: 'https://github.com/gkcodez',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/gkcodez",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           // {
           //   title: 'Docs',
