@@ -1,7 +1,7 @@
 ---
-title: Public Key Cryptography Basics
+title: Public Key Cryptography
 sidebar_position: 3
-description: Basics of Public Key Cryptography.
+description: Public Key Cryptography notes.
 ---
 
 ## Introduction

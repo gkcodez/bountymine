@@ -1,6 +1,6 @@
 ---
-title: What is Networking
-sidebar_position: 1
+title: Introduction to Networking
+sidebar_position: 2
 ---
 
 ## Neworking Introduction

@@ -1,7 +1,7 @@
 ---
-title: Cryptography Basics
+title: Introduction to Cryptography
 sidebar_position: 2
-description: Basics of Cryptography.
+description: Introduction of Cryptography.
 ---
 
 ## Introduction

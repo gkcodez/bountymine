@@ -1,5 +1,5 @@
 ---
-title: Cybersecurity Introduction
+title: Introduction to Cybersecurity
 sidebar_position: 1
 description: Introduction to cybersecurity
 ---

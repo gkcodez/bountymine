@@ -1,7 +1,7 @@
 ---
-title: Hashing Basics
+title: Hashing
 sidebar_position: 4
-description: Basics of Hashing.
+description: Hashing notes.
 ---
 
 ## Introduction
