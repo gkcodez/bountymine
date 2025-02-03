@@ -1,7 +1,7 @@
 ---
 title: Search Skills
-sidebar_position: 2
-description: Searching skills needed for cybersecurity
+sidebar_position: 1
+description: Searching skills for cybersecurity
 ---
 
 ## Search Engines
