@@ -1,5 +1,5 @@
 ---
-title: Reverse Engineering Tools
+title: Reverse Engineering
 sidebar_position: 4
 ---
 
