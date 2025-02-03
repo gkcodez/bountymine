@@ -19,6 +19,7 @@ description: Commands, flags and operators.
 - `cat` - Displays the contents of a file.
 - `pwd` - Prints the path of current working directory.
 - `man` - Shows manual page of the command.
+- `sudo -l` - Check the commands that the current user can run.
 
 ## Basic Flags and Switches
 - `ls -a` - Lists files in the given path including the hidden ones.

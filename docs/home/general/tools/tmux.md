@@ -1,6 +1,6 @@
 ---
 title: Tmux
-sidebar_position: 4
+sidebar_position: 1
 description: tmux, the terminal multiplexer.
 ---
 
