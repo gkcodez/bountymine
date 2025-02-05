@@ -1,7 +1,7 @@
 ---
-title: Tcpdump Basics
+title: Tcpdump
 sidebar_position: 1
-description: Basics of Tcpdump.
+description: Tcpdump notes.
 ---
 
 ## Introduction

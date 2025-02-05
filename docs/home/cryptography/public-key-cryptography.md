@@ -1,6 +1,6 @@
 ---
 title: Public Key Cryptography
-sidebar_position: 3
+sidebar_position: 2
 description: Public Key Cryptography notes.
 ---
 

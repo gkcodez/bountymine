@@ -1,6 +1,6 @@
 ---
 title: Introduction to Cryptography
-sidebar_position: 2
+sidebar_position: 1
 description: Introduction of Cryptography.
 ---
 

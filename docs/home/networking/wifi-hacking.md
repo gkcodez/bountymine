@@ -1,6 +1,6 @@
 ---
 title: Wi-Fi Hacking
-sidebar_position: 100
+sidebar_position: 7
 ---
 
 ## WPA Hacking

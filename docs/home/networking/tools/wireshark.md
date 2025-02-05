@@ -1,7 +1,7 @@
 ---
-title: Wireshark Basics
+title: Wireshark
 sidebar_position: 2
-description: Basics of Wireshark.
+description: Wireshark notes.
 ---
 
 ## Introduction

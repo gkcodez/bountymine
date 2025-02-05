@@ -1,8 +1,8 @@
 {
-  "label": "Miscellaneous",
+  "label": "Tools",
   "position": 101,
   "link": {
     "type": "generated-index",
-    "description": "Miscellaneous notes."
+    "description": "Defensive security tools."
   }
 }
