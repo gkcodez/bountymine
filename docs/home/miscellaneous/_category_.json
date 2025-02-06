@@ -1,8 +1,8 @@
 {
-  "label": "Tools",
+  "label": "Miscellaneous",
   "position": 101,
   "link": {
     "type": "generated-index",
-    "description": "General tools."
+    "description": "Miscellaneous notes."
   }
 }

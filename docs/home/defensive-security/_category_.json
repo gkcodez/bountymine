@@ -1,8 +1,8 @@
 {
-  "label": "Defensive Security",
+  "label": "Defense",
   "position": 9,
   "link": {
     "type": "generated-index",
-    "description": "Defensive security notes."
+    "description": "Defense notes."
   }
 }

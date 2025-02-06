@@ -1,8 +1,8 @@
 {
-  "label": "Tools",
+  "label": "Defense Tools",
   "position": 101,
   "link": {
     "type": "generated-index",
-    "description": "Defensive security tools."
+    "description": "Defense tools."
   }
 }

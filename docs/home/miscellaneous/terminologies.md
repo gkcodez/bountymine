@@ -1,6 +1,7 @@
 ---
 title: Terminologies
 sidebar_position: 1
+description: General terminologies in cybersecurity
 ---
 
 ## Wi-Fi
