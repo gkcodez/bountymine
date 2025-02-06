@@ -45,19 +45,30 @@ description: Specialised Linux distro for dissecting potentially malicious softw
 - One of the most common investigative practices in Digital Forensics is the preprocessing of evidence.
 - This involves running tools and saving the results in text or JSON format.
 
-### Volatility
+### Preprocessing With Volatility
 - Volatility tool is used when dealing with memory images as evidence.
 - Volatility helps to identify and extract specific artefacts from memory images.
 - Here are some of the parameters or plugins we will use. We will focus on Windows plugins.
-    - windows.pstree.PsTree
-    - windows.pslist.PsList
-    - windows.cmdline.CmdLine
-    - windows.filescan.FileScan
-    - windows.dlllist.DllList
-    - windows.malfind.Malfind
-    - windows.psscan.PsScan
-- To investigate a file with Volatility use the below command.
+    - **windows.pstree.PsTree** -  Lists processes in a tree based on their parent process ID.
+    - **windows.pslist.PsList** -  Lists all currently active processes in the machine.
+    - **windows.cmdline.CmdLine** - Lists process command line arguments.
+    - **windows.filescan.FileScan** - Scans for file objects in a particular Windows memory image. 
+    - **windows.dlllist.DllList** - Lists the loaded modules in a particular Windows memory image. 
+    - **windows.malfind.Malfind** - Lists process memory ranges that potentially contain injected code. 
+    - **windows.psscan.PsScan** - Scans for processes present in a particular Windows memory image.
+- To investigate a file with Volatility plugin use the below command.
     ```
-    vol3 -f wcry.mem
+    vol3 -f <FILE_NAME> <PLUGIN_NAME>
     ```
-- 
+    ```
+    vol3 -f wcry.mem windows.pstree.PsTree
+    ```
+- To run all plugins at once, use the below command
+    ```
+    for plugin in windows.malfind.Malfind windows.psscan.PsScan windows.pstree.PsTree windows.pslist.PsList windows.cmdline.CmdLine windows.filescan.FileScan windows.dlllist.DllList; do vol3 -q -f wcry.mem $plugin > wcry.$plugin.txt; done
+    ```
+
+### Preprocessing with Linux Strings Utility
+- Linux strings utility can extract the ASCII, 16-bit little-endian, and 16-bit big-endian strings.
+- The `-e l` option tells strings to extract 16-bit little endian strings. 
+- The `-e b` option tells strings to extract 16-bit big endian strings. 
