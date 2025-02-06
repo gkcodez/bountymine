@@ -1,6 +1,6 @@
 ---
 title: Search Skills
-sidebar_position: 1
+sidebar_position: 3
 description: Searching skills for cybersecurity
 ---
 
