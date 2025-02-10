@@ -4,6 +4,61 @@ sidebar_position: 1
 description: Collection of google dorks.
 ---
 
+## Basics
+
+- `site:` – Restrict results to a specific website or domain
+- `inurl:` – Find pages with a certain word or phrase in the URL
+- `intitle:` – Find pages with a certain word or phrase in the title tag
+- `intext:` – Find pages containing a certain word or phrase in the text
+- `filetype:` – Search for files of a specific extension, like .pdf or .txt
+- `"word"` – Find pages containing an exact phrase match
+- `*` – Acts as a wildcard, matching any word or phrase
+- `-` – Exclude a word or site from the search results
+- `|` – Search for pages matching one query or another
+
+## Find Bug Bounty Programs
+
+### Find Main Bug Bounty Pag
+
+```
+inurl:security
+inurl:responsible-disclosure
+"vulnerability disclosure program"
+"powered by bugcrowd" -site:bugcrowd.com
+"submit vulnerability report"
+```
+
+### Find Scope and rules
+
+```
+inurl:bugbounty intext:"rules"
+inurl:bugbounty intext:"scope"
+inurl:security ext:pdf
+"out of scope" intext:bounty
+```
+
+### Reward Information 
+```
+inurl:security intext:"reward"
+inurl:bugbounty intext:"hall of fame"
+inurl:security "swag"
+inurl:bugbounty intext:"$" -inurl:hackerone -inurl:bugcrowd
+```
+
+### Technology Specific
+```
+inurl:bugbounty intext:wordpress
+inurl:security intext:php
+inurl:responsible-disclosure intext:apache
+```
+
+### Platform Specific
+```
+"bug bounty" site:hackerone.com
+"bug bounty" site:bugcrowd.com
+"vulnerability disclosure program" site:hackerone.com
+```
+
 ## Find based on extensions
 ```
 site:example.com ext:php inurl:?
