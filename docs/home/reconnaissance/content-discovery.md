@@ -60,9 +60,9 @@ description: Content discovery.
 
 ## OSINT - S3 Buckets
 - S3 Buckets are a storage service provided by Amazon AWS.
-- The format of the S3 buckets is http(s)://{name}.s3.amazonaws.com where {name} is decided by the owner.
+- The format of the S3 buckets is `http(s)://{name}.s3.amazonaws.com` where `{name}` is decided by the owner.
 - The S3 buckets can be identified manually from the page source or github or even by automation.
--  One common automation method is by using the company name followed by common terms such as {name}-assets, {name}-www, {name}-public, {name}-private, etc.
+-  One common automation method is by using the company name followed by common terms such as `{name}`-assets, `{name}-www`, `{name}-public`, `{name}-private`, etc.
 
 ## Automated Discovery
 - Automated discovery is the process of using tools to discover content rather than doing it manually. This process is automated as it usually contains hundreds, thousands or even millions of requests to a web server. 
