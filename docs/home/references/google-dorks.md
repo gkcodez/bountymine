@@ -1,6 +1,6 @@
 ---
 title: Google Dorks
-sidebar_position: 1
+sidebar_position: 2
 description: Collection of google dorks.
 ---
 
