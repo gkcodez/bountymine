@@ -47,7 +47,7 @@ gobuster dns -d target.com -w /SecLists/Discovery/DNS/subdomains-top1million-500
 cat *_subs.txt | sort -u | anew all_subs.txt
 
 # Resolve subdomains to filter dead ones
-cat all_subs.txt | dnsx -silent -resp | tee resolved_subs.txt
+cat all_subs.txt | dnsx -silent | tee resolved_subs.txt
 
 ### Find live subdomains
 cat resolved_subs.txt | httpx -silent -o live_subs.txt
@@ -59,7 +59,7 @@ cat live_subs.txt | httpx -silent -status-code -title -tech-detect | tee live_su
 whatweb -i live_subs.txt | tee techs.txt
 
 ### Get screenshots of subdomain pages [OPTIONAL]
-gowitness file -f live_subs.txt -o screenshots/
+cat live_subs.txt | xargs -I{} gowitness scan single -u "{}"
 ```
 
 ### Explore the target assets
@@ -81,7 +81,7 @@ site:github.com "target.com" password
 # /usr/share/seclists/Discovery/Web-Content/big.txt (For deeper scans)
 # /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt (For exhaustive scans)
 
-ffuf -u https://target.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o dirs.txt
+ffuf -u https://target.com/FUZZ -w ~/Wordlists/Seclists/Discovery/Web-Content/common.txt -mc 200
 
 # Find API endpoints
 
