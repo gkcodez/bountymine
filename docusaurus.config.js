@@ -22,7 +22,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "gkcodez", // Usually your GitHub org/user name.
+  organizationName: "gktomic", // Usually your GitHub org/user name.
   projectName: "bountymine", // Usually your repo name.
 
   onBrokenLinks: "warn",
@@ -93,12 +93,12 @@ const config = {
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: "https://linkedin.com/in/gkcodez",
+            href: "https://linkedin.com/in/gktomic",
             label: "LinkedIn",
             position: "right",
           },
           {
-            href: "https://github.com/gkcodez",
+            href: "https://github.com/gktomic",
             label: "GitHub",
             position: "right",
           },
@@ -112,7 +112,7 @@ const config = {
           //   items: [
           //     {
           //       label: 'LinkedIn',
-          //       href: 'https://linkedin.com/in/gkcodez',
+          //       href: 'https://linkedin.com/in/gktomic',
           //     },
           //   ],
           // },
