@@ -102,6 +102,11 @@ const config = {
             label: "GitHub",
             position: "right",
           },
+          {
+            href: "https://razorpay.me/@gktomic",
+            label: "Donate",
+            position: "left",
+          },
         ],
       },
       footer: {
