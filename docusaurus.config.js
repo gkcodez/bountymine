@@ -95,17 +95,17 @@ const config = {
           {
             href: "https://linkedin.com/in/gktomic",
             label: "LinkedIn",
-            position: "right",
+            position: "left",
           },
           {
             href: "https://github.com/gktomic",
             label: "GitHub",
-            position: "right",
+            position: "left",
           },
           {
             href: "https://razorpay.me/@gktomic",
             label: "Donate",
-            position: "left",
+            position: "right",
           },
         ],
       },
