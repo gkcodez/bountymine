@@ -25,7 +25,7 @@ description: Linux applications and utilities
 
 ## Wget
 - Wget is used for downloading files from the internet.
-- For example: `wget https://github.com/gkcodez/myfile.txt`
+- For example: `wget https://github.com/gobeecode/myfile.txt`
 
 ## Secure Copy (SCP)
 - Allows the user to securely copy files from one computer to another using **Secure Shell (SSH)**.
